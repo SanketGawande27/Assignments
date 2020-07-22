@@ -91,8 +91,7 @@ public class Myqueue {
 	    	}
 	    }catch(Myexception ex) {
 	    	System.out.println(ex.getMessage());
-	    }
-	    	
+		}	
 	    }
 }
 

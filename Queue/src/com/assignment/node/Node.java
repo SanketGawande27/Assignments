@@ -7,6 +7,10 @@ public class Node {
 	   this.data=data;
 	   next = null;
    }
+	
+	public void dispaynode() {
+	System.out.print(data+" ");
+}
 
 public int getData() {
 	return data;
@@ -22,10 +26,7 @@ public Node getNext() {
 public void setNext(Node next) {
 	this.next = next;
 } 
-	@Override
-public String toString() {
-	return "Node [data=" + data + ", next=" + next + "]";
-}
+	
 }
 
 

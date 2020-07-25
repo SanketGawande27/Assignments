@@ -61,21 +61,16 @@ public class Myqueue {
 	    }
 	    
 	    
-	    
-	    public String display() throws MyException {
-	    	
-	    	if(front == null && rear == null )
-	    		throw new MyException("Queue is Empty ....");
+	    public void dispay() throws MyException {
+	    	if(front==null && rear == null)
+	    		throw new MyException("Queue is Empty .....");
 	    	else {
-	    		Node ptr= front;
-	    		while(ptr!=rear.getNext()) {
-	    			System.out.print(ptr.getData()+"  ");
-	    			ptr = ptr.getNext();
-	    			//return ptr.toString();
-	    		}
-	    		
+	    	Node current = front;
+	    	while(current!=null) {
+	    		current.dispaynode();
+	    		current=current.getNext();
 	    	}
-		return ptr.toString();
-	    	
 	    }
+	   }
+	   
 }

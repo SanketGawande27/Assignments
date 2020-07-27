@@ -55,7 +55,7 @@ public class Myqueue {
 	   
 	 public int size() {
 	    	  return size;
-	    }
+	 }
 	    
 	    
 	@Override
@@ -73,6 +73,6 @@ public class Myqueue {
             	  return "Queue is Empty ...! ";
             
                   return "Elements in Queue " + result;
-		}
+         }
 	     
  }

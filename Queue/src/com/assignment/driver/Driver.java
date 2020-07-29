@@ -18,7 +18,8 @@ public class Driver {
 			switch (choice) {
 			case 1:
 				System.out.print("Enter new element: ");
-				myq.insert();
+				String element = scanner.next();
+				myq.insert(element);
 				break;
 
 			case 2:

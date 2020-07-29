@@ -5,7 +5,7 @@ import java.util.Scanner;
 import com.assignment.customexpection.MyException;
 import com.assignment.node.Node;
 
-public class Myqueue {
+public class Myqueue<E> {
 
 	private Node rear;
 	private Node front;
@@ -28,7 +28,7 @@ public class Myqueue {
 
 	public void insert() {
 		Scanner sc = new Scanner(System.in);
-		int element = sc.nextInt();
+		String element = sc.next();
 		Node node = new Node(element);
 		if (front == null) {
 			rear = node;
@@ -42,7 +42,7 @@ public class Myqueue {
 		}
 	}
 
-	public int delete() throws MyException {
+	public Object delete() throws MyException {
 		if (isEmpty())
 			throw new MyException("Queue is Already Empty Not Been Deleted......\nPlease Insert Elements First ....");
 		Node ptr = front;
@@ -71,6 +71,6 @@ public class Myqueue {
 		if (result == "")
 			return "Queue is Empty ...! ";
 
-		return "Elements in Queue " + result;
+		return "Elements in Queue: " + result;
 	}
 }

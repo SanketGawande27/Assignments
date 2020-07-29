@@ -1,20 +1,20 @@
 package com.assignment.node;
 
-public class Node {
-	private int data;
+public class Node<E> {
+	private E data;
 	private Node next;
 
-	public Node(int data) {
+	public Node(E data) {
 		this.data = data;
 		next = null;
 	}
 
-	public int getData() {
+	public E getData() {
 		return data;
 	}
 
-	public void setData(int data) {
-		this.data = data;
+	public E setData(E data) {
+		return this.data = data;
 	}
 
 	public Node getNext() {
@@ -30,3 +30,4 @@ public class Node {
 		return "Node [data=" + data + ", next=" + next + "]";
 	}
 }
+

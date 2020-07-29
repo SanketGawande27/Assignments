@@ -26,9 +26,7 @@ public class Myqueue<E> {
 		return res;
 	}
 
-	public void insert() {
-		Scanner sc = new Scanner(System.in);
-		String element = sc.next();
+	public <E> void insert(E element) {
 		Node node = new Node(element);
 		if (front == null) {
 			rear = node;

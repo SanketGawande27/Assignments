@@ -35,7 +35,6 @@ public class Driver {
 					break;
 
 				case 3:
-					System.out.println("Direct From Queue :");
 					System.out.println(myq);
 					break;
 

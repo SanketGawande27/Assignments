@@ -9,6 +9,7 @@ public class Driver {
 
 	public static <E> void main(String[] args) throws MyException {
 		MyException ex = new MyException(null);
+		StudentInfo<E> stud = new StudentInfo<E>();
 		Scanner scanner = new Scanner(System.in);
 		Myqueue<E> myq = new Myqueue<E>();
 		while (true) {

@@ -13,7 +13,7 @@ public class Driver {
 		Myqueue<E> myq = new Myqueue<E>();
 		while (true) {
 			System.out.print(
-					"\n*******************************************\nPress \n1 for insert \n2 for Delete \n3 for Display \n4 for Size \n");
+					"\n*******************************************\nPress \n1 for insert \n2 for Delete \n3 for Display \n4 for Size \n 5 for Insert StudentInfo");
 			int choice = scanner.nextInt();
 			switch (choice) {
 			case 1:
@@ -36,6 +36,21 @@ public class Driver {
 
 			case 4:
 				System.out.print("Total Size :" + myq.size());
+				break;
+					
+		       case 5:
+				System.out.println("Enter Student Information : Name, Rollno, Marks ,Address");
+				String name = scanner.next();
+				stud.setName(name);
+				int rollno = scanner.nextInt();
+				stud.setRollno(rollno);
+				float marks = scanner.nextFloat();
+				stud.setMarks(marks);
+				String address = scanner.next();
+				stud.setAddress(address);
+				myq.insert(stud);
+
+				//System.out.println(stud);
 				break;
 
 			default:

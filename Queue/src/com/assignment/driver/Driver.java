@@ -46,7 +46,7 @@ public class Driver {
 					System.out.println("Enter Student Information : Name, Address, Rollno, Marks");
 					StudentInfo stud = new StudentInfo(sc.next(), sc.next(), sc.nextInt(), sc.nextDouble());
 					myq.insert(stud);
-					System.out.println("Entry Added Successfully");
+					System.out.println("Student Added Successfully");
 
 					break;
 

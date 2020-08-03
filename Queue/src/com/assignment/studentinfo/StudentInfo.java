@@ -1,12 +1,9 @@
 package com.assignment.studentinfo;
 
-import com.assignment.node.Node;
-
 public class StudentInfo<E> {
 	private String name, address;
 	private int rollno;
-	private float marks;
-	private Node obj, front, rear;
+	private double marks;
 
 	public StudentInfo(String name, String address, int rollno, double marks) {
 		super();
@@ -47,7 +44,7 @@ public class StudentInfo<E> {
 		this.rollno = rollno;
 	}
 
-	public float getMarks() {
+	public double getMarks() {
 		return marks;
 	}
 
@@ -60,7 +57,7 @@ public class StudentInfo<E> {
 	public String toString() {
 
 		return "StudentInfo [name=" + name + ", rollno=" + rollno + ", marks=" + marks + ", " + "Address =" + address
-				+ "]";
+				+ "]\n";
 
 	}
 

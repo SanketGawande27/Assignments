@@ -2,7 +2,7 @@ package com.assignment.driver;
 
 import java.util.Scanner;
 
-import com.assignment.customexpection.MyException;
+import com.assignment.customexceptions.MyException;
 import com.assignment.queue.service.impl.Myqueue;
 import com.assignment.studentinfo.StudentInfo;
 

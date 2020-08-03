@@ -1,8 +1,7 @@
 package com.assignment.queue.service.impl;
 
 import java.util.Scanner;
-
-import com.assignment.customexpection.MyException;
+import com.assignment.customexceptions.MyException;
 import com.assignment.node.Node;
 
 public class Myqueue<E> {

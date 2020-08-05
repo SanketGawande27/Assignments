@@ -13,13 +13,6 @@ public class StudentInfo<E> {
 		this.marks = marks;
 	}
 
-	public StudentInfo() {
-		name = null;
-		address = null;
-		rollno = 00;
-		marks = 00;
-	}
-
 	public String getName() {
 		return name;
 	}
@@ -56,9 +49,35 @@ public class StudentInfo<E> {
 
 	public String toString() {
 
-		return "StudentInfo [name=" + name + ", rollno=" + rollno + ", marks=" + marks + ", " + "Address =" + address
-				+ "]\n";
+		return "\nStudentInfo [name = " + name + ", rollno = " + rollno + ", marks = " + marks + ", " + "Address = "
+				+ address + "]\n";
 
 	}
 
 }
+
+/*
+ * String result = ""; Node obj = front; while (obj != null) { result +=
+ * obj.getobj(); result += ", ";
+ * 
+ * obj = obj.getNext(); } if (result == "") return "Empty...";
+ * 
+ * return "StudentInfo [name=" + name + ", rollno=" + rollno + ", marks=" +
+ * marks + ", " + "Address =" + address + "]";
+ * 
+ */
+
+/*
+ * // String result = ""; Node ptr = obj;while(ptr!=null) { // result +=
+ * ptr.getobj(); System.out.println(ptr.getobj()); // if (ptr.getNext() != null)
+ * { // result += ", "; // } // ptr = ptr.getNext();
+ * 
+ * }if(result=="")return"Queue is Empty ...! ";
+ * 
+ * return"StudentInfo [name="+name+", rollno="+rollno+", marks="+marks+", "
+ * +"Address ="+address+"]";
+ * 
+ * // System.out.println(ptr.getobj()); }
+ * 
+ * }
+ */

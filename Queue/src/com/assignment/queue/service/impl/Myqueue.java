@@ -1,7 +1,6 @@
 package com.assignment.queue.service.impl;
 
-import java.util.Scanner;
-import com.assignment.customexceptions.MyException;
+import com.assignment.customexpection.MyException;
 import com.assignment.node.Node;
 
 public class Myqueue<E> {
@@ -9,7 +8,8 @@ public class Myqueue<E> {
 	private Node rear;
 	private Node front;
 	private int size;
-	private Node ptr;
+	private Node ptr, stud;
+	private Object element;
 
 	public Myqueue() {
 		front = null;
@@ -70,4 +70,5 @@ public class Myqueue<E> {
 
 		return "Elements in Queue: " + result;
 	}
+
 }

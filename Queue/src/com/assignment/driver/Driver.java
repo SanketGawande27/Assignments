@@ -1,5 +1,7 @@
 package com.assignment.driver;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 import com.assignment.customexpection.MyException;
@@ -10,7 +12,12 @@ public class Driver {
 
 	public static <E> void main(String[] args) throws MyException {
 		MyException ex = new MyException(null);
+		StudentInfo<E> stud = new StudentInfo<E>("Sanket", "Akola", 88, 75.66); // constant values for StudentInfo  object.
+																			
 		Myqueue<StudentInfo> myq = new Myqueue<>();
+		Queue<Object> q = new LinkedList<Object>(); // for Queue- Collection
+		// Queue<Integer> q = new LinkedList<Integer>();  // for_object_of_wrapper_class_and_integer_datatype.
+		
 
 		try (Scanner sc = new Scanner(System.in)) {
 
@@ -20,9 +27,29 @@ public class Driver {
 				int choice = sc.nextInt();
 				switch (choice) {
 				case 1:
-					System.out.print("Enter new element: ");
-					String element = sc.next();
-					myq.insert(element);
+					System.out.println("Entering 1M elements :");
+					long startTime = System.currentTimeMillis();
+
+					for (int i = 1; i <= 1000000; i++) {
+						//for Queue in Collection
+						
+						// Integer ele = i; // for object of wrapper class (Integer) for Queue in collection
+						// q.add(stud); // for inserting user define class StudentInfo of object stud. 
+						// q.add(i); // for inserting integer values in Queue.
+
+						// for Queue class 
+						
+						// myq.insert(i); // for inserting integer values in Class Queue.
+						// myq.insert(ele); // for inserting object of wrapper class(Integer)
+						   myq.insert(stud); // for inserting user define class object stud
+
+					}
+
+					long endTime = System.currentTimeMillis();
+					long timeElapsed = endTime - startTime;
+					System.out.println("1M records are Inserted succesfully");
+					System.out.println("Execution time in sec : " + timeElapsed / 1000F);
+
 					break;
 
 				case 2:
@@ -43,13 +70,8 @@ public class Driver {
 
 				case 5:
 					System.out.println("Enter Student Information : Name, Address, Rollno, Marks");
-					StudentInfo stud = new StudentInfo(sc.next(), sc.next(), sc.nextInt(), sc.nextDouble());
-					// String Name = sc.next();
-					// String Addr = sc.next();
-					// int rollNO = sc.nextInt();
-					// double MArks = sc.nextDouble();
-					// StudentInfo stud = new StudentInfo(Name, Addr, rollNO, MArks);
-					myq.insert(stud);
+					StudentInfo stud1 = new StudentInfo(sc.next(), sc.next(), sc.nextInt(), sc.nextDouble());
+					myq.insert(stud1);
 					System.out.println("Entry Added Successfully");
 
 					break;

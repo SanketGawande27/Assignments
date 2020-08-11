@@ -47,7 +47,7 @@ public class Driver {
 
 					long endTime = System.currentTimeMillis();
 					long timeElapsed = endTime - startTime;
-					System.out.println("1M records are Inserted succesfully");
+					System.out.println("Records are Inserted succesfully");
 					System.out.println("Execution time in sec : " + timeElapsed / 1000F);
 
 					break;

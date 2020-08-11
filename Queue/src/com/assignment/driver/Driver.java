@@ -30,15 +30,15 @@ public class Driver {
 					System.out.println("Entering 1M elements :");
 					long startTime = System.currentTimeMillis();
 
-					for (int i = 1; i <= 1000000; i++) {
+					for (int i = 1; i <= 1000000; i++) {        //change the condition as per records..
 						//for Queue in Collection
 						
 						// Integer ele = i; // for object of wrapper class (Integer) for Queue in collection
 						// q.add(stud); // for inserting user define class StudentInfo of object stud. 
 						// q.add(i); // for inserting integer values in Queue.
-
-						// for Queue class 
+						// q.add(ele); // for inserting wrapper class object into the queue.
 						
+						// for Queue class 
 						// myq.insert(i); // for inserting integer values in Class Queue.
 						// myq.insert(ele); // for inserting object of wrapper class(Integer)
 						   myq.insert(stud); // for inserting user define class object stud
